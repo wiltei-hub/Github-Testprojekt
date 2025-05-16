@@ -5,7 +5,7 @@ from user import kann_benutzer_registriert_werden
 class TestUserIntegration(unittest.TestCase):
 
     def test_gueltige_registrierung(self):
-        result = kann_benutzer_registriert_werden("test@example.com", "S123")
+        result = kann_benutzer_registriert_werden("test@example.com", "S1234567")
         self.assertTrue(result)
 
     def test_ungueltige_email(self):
